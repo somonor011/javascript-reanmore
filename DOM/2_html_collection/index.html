@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <ul class="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <script>
+
+    const elements = document.getElementsByTagName("li"); // HTMLCollection 0 1 2 ....
+    console.log(elements[1]); // show result Item 2 (but it's not array)
+
+    // but if we wanna show all li
+
+    const spreadElement = [...elements];
+    console.log(spreadElement); // show all items
+
+    spreadElement.forEach(function (e){ // we also can show all item by forEach
+      console.log(e)
+    })
+
+  </script>
+</body>
+</html>
