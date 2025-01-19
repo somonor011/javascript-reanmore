@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1 id="myText">reanmore.com</h1>
+  <button>Click</button>
+
+  <ul>
+    <li></li>
+  </ul>
+
+  <input type="text">
+
+  <script>
+    // target element use getElementById
+
+    const heading = document.getElementById("myText");
+    console.log(heading);
+
+    // target element use querySelector : can target id , class , element
+
+    const element = document.querySelector("button"); // target name tag
+    console.log(element);
+
+    const myElement = document.querySelector("ul > li");
+    console.log(myElement);
+
+    // target attribute
+
+    const myType = document.querySelector("input[type='text']");
+    console.log(myType);
+  </script>
+</body>
+</html>
